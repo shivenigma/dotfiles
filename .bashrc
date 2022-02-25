@@ -125,3 +125,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # added by travis gem
 [ -f /home/vignesh/.travis/travis.sh ] && source /home/vignesh/.travis/travis.sh
+
+# Alias for dotfiles repo and management
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
