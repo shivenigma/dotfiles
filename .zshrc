@@ -1,1 +1,1 @@
-/home/vignesh/.zprezto/runcoms/zshrc
+/home/agira/.zprezto/runcoms/zshrc
