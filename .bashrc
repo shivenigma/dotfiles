@@ -128,3 +128,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Alias for dotfiles repo and management
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Setting VIM as default for git
+export GIT_EDITOR=vim
