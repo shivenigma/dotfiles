@@ -32,6 +32,27 @@ set wildmenu
 "set bracket highlighting"
 set showmatch
 
+" ===== Programmer's Dvorak Remapping =====
+" Movement: htns (h is already correct, only remap t, n, s)
+noremap t gj   " down
+noremap n gk   " up
+noremap s l    " right
+" h already moves left, no need to remap
+
+" Uppercase versions
+noremap T J
+noremap N K
+noremap S L
+" H already works, no need to remap
+
+" Remap displaced keys
+noremap j t    " 'till' moved to j
+noremap J T
+noremap l n    " 'next search' moved to l
+noremap L N
+noremap k s    " 'substitute' moved to k
+noremap K S
+
 "----------------------command mappings------------------------------------"
 "editing the vimrc file for soruce name space 'se' for shivenigma"
 nmap ses :tabedit $MYVIMRC<cr>
@@ -42,9 +63,7 @@ nmap sep :tabedit ~/.vim/plugins.vim<cr>
 "disable search highlighting"
 nmap <leader><space> :nohlsearch<cr>
 
-"don't skip visual lines, like folded lines in navigation"
-nnoremap j gj
-noremap k gk
+
 
 "------------------------Auto Commands -----------------------------------"
 "Automaticaclly source .vimrc after edit"
