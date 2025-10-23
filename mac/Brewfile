@@ -1,0 +1,13 @@
+tap "nikitabobko/tap"
+brew "gh"
+brew "git"
+brew "gnupg"
+brew "imagemagick"
+brew "mailpit"
+brew "nodenv"
+brew "openjdk"
+brew "postgresql@14", restart_service: :changed
+brew "rbenv"
+cask "aerospace"
+cask "programmer-dvorak"
+cask "raycast"
