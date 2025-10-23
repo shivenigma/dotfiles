@@ -1,0 +1,15 @@
+[user]
+	name = Vignesh M
+	email = ms.vignesh31@gmail.com
+	signingkey = /Users/vignesh.madhavan.ext/.ssh/id_ed25519
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
