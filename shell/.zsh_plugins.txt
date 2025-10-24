@@ -6,6 +6,5 @@ aloxaf/fzf-tab
 #powerlevelk
 romkatv/powerlevel10k
 
-rma-continuum/fast-syntax-highlighting
 zsh-users/zsh-autosuggestions
 
