@@ -1,0 +1,9 @@
+# Completions
+mattmc3/ez-compinit
+zsh-users/zsh-completions kind:fpath path:src
+aloxaf/fzf-tab 
+
+#powerlevelk
+romkatv/powerlevel10k
+
+
