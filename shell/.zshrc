@@ -16,9 +16,14 @@ setopt hist_ignore_dups
 setopt hist_verify
 
 # antidote path from homebrew
-
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To enable and disable tmux sessions when we open a new terminal
+# This breaks default tmux functionality of detaching through ctrl-b + d, because the session will destroy on detachment
+# remove if want to use tmux multiple sessions, I rarely use it nowadays that way
+# if [ "$TMUX" = "" ]; then tmux new \; set-option destroy-unattached; fi
+

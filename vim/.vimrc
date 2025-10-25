@@ -4,6 +4,12 @@
 syntax enable
 colorscheme murphy 
 
+"make vim background tranperant so that terminal theme can be visible
+
+hi NonText ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
+hi EndOfBuffer ctermbg=None guibg=NONE
+
 "set leader to comma as / is too far from front row"
 let mapleader=","
 
