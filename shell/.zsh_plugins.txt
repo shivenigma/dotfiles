@@ -7,4 +7,3 @@ aloxaf/fzf-tab
 romkatv/powerlevel10k
 
 zsh-users/zsh-autosuggestions
-mbenford/zsh-tmux-auto-title

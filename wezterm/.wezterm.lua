@@ -24,16 +24,16 @@ config.leader = { key = 'Space', mods = 'CTRL', timeout_milliseconds = 2000 }
 
 config.keys = {
 
--- --------------------------------------------------------------------------
--- TABS -- Mimic my own Tmux keybindings as much as possible
--- --------------------------------------------------------------------------
--- Opens the tab navigator list
+    -- --------------------------------------------------------------------------
+    -- TABS -- Mimic my own Tmux keybindings as much as possible
+    -- --------------------------------------------------------------------------
+    -- Opens the tab navigator list
     {
         key = 'w',
         mods = 'LEADER',
-        action = act.ShowTabNavigator,    
+        action = act.ShowTabNavigator,
     },
--- Move to next/previous TAB
+    -- Move to next/previous TAB
     {
         key = 'n',
         mods = 'LEADER',
@@ -48,9 +48,9 @@ config.keys = {
     {
         key = 'q',
         mods = 'LEADER',
-        action = act.CloseCurrentTab{ confirm = true },
+        action = act.CloseCurrentTab { confirm = true },
     },
--- Tmux Panes
+    -- Tmux Panes
     -- -- Vertical split
     {
         -- |
@@ -77,7 +77,7 @@ config.keys = {
         mods = 'LEADER',
         action = act.CloseCurrentPane { confirm = true },
     },
-    -- CTRL + (h,j,k,l) to move between panes
+    -- LEADER + (h,t,n,s) to move between panes
     {
         key = 'h',
         mods = 'LEADER',
@@ -97,6 +97,27 @@ config.keys = {
         key = 's',
         mods = 'LEADER',
         action = act.ActivatePaneDirection 'Right',
+    },
+    -- Shift + (h,t,n,s) to resize panes
+    {
+        key = 'h',
+        mods = 'LEADER|SHIFT',
+        action = act.AdjustPaneSize { 'Left', 5 },
+    },
+    {
+        key = 't',
+        mods = 'LEADER|SHIFT',
+        action = act.AdjustPaneSize { 'Down', 5 },
+    },
+    {
+        key = 'n',
+        mods = 'LEADER|SHIFT',
+        action = act.AdjustPaneSize { 'Up', 5 },
+    },
+    {
+        key = 's',
+        mods = 'LEADER|SHIFT',
+        action = act.AdjustPaneSize { 'Right', 5 },
     },
 }
 
