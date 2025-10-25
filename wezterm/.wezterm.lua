@@ -119,6 +119,12 @@ config.keys = {
         mods = 'LEADER|SHIFT',
         action = act.AdjustPaneSize { 'Right', 5 },
     },
+    -- Take the current pane to fullscreen/window
+    {
+        key = 'z',
+        mods = 'LEADER',
+        action = act.TogglePaneZoomState,
+    },
 }
 
 
