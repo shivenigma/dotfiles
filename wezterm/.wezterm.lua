@@ -9,19 +9,29 @@ local config = wezterm.config_builder()
 
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 18
-config.color_scheme = 'Bim (Gogh)'
-config.window_background_opacity = 0.6
+config.color_scheme = 'Bim (Gogh'
+config.window_background_opacity = 0.7
+config.macos_window_background_blur = 25
+
+config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS'
 
 -- Disable the tab bar if needed
 -- config.enable_tab_bar = false
-config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = true
 config.pane_focus_follows_mouse = true
 config.scrollback_lines = 5000
 
 -- setting up control + space as leader key to mimic tmux setup
-config.leader = { key = 'Space', mods = 'CTRL', timeout_milliseconds = 2000 }
-
+config.leader = {
+    key = 'Space',
+    mods = 'CTRL',
+    timeout_milliseconds = 2000
+}
+-- Dim inactive panes
+config.inactive_pane_hsb = {
+    saturation = 0.8,
+    brightness = 0.7
+}
 config.keys = {
 
     -- --------------------------------------------------------------------------
