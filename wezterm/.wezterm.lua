@@ -18,6 +18,7 @@ config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS'
 -- Disable the tab bar if needed
 -- config.enable_tab_bar = false
 config.use_fancy_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
 config.pane_focus_follows_mouse = true
 config.scrollback_lines = 5000
 
