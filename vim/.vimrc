@@ -40,31 +40,31 @@ set showmatch
 
 " ===== Programmer's Dvorak Remapping =====
 " Movement: htns (h is already correct, only remap t, n, s)
-noremap t gj   " down
-noremap n gk   " up
-noremap s l    " right
+nnoremap <nowait> n k
+nnoremap <nowait> t j
+nnoremap <nowait> s l
 " h already moves left, no need to remap
 
 " Uppercase versions
-noremap T J
-noremap N K
-noremap S L
+"noremap T J
+"noremap N K
+"noremap S L
 " H already works, no need to remap
 
 " Remap displaced keys
-noremap j t    " 'till' moved to j
-noremap J T
-noremap l n    " 'next search' moved to l
-noremap L N
-noremap k s    " 'substitute' moved to k
-noremap K S
+"noremap j t    " 'till' moved to j
+"noremap J T
+"noremap l n    " 'next search' moved to l
+"noremap L N
+"noremap k s    " 'substitute' moved to k
+"noremap K S
 
 "----------------------command mappings------------------------------------"
 "editing the vimrc file for soruce name space 'se' for shivenigma"
-nmap ses :tabedit $MYVIMRC<cr>
+"nmap ses :tabedit $MYVIMRC<cr>
 
 "Editing the vimplugins file"
-nmap sep :tabedit ~/.vim/plugins.vim<cr>
+"nmap sep :tabedit ~/.vim/plugins.vim<cr>
 
 "disable search highlighting"
 nmap <leader><space> :nohlsearch<cr>
