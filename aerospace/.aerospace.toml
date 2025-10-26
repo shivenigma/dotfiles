@@ -236,7 +236,7 @@ run = 'move-node-to-workspace W'
 
 # Move Terminal to E- tErminal - T can't be used as it is a shortcut
 [[on-window-detected]]
-if.app-id = 'com.github.wez.wezter'
+if.app-id = 'com.github.wez.wezterm'
 run = 'move-node-to-workspace E'
 
 # Move firefox to P - Personal
