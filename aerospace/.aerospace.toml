@@ -220,7 +220,7 @@ run = 'move-node-to-workspace C'
 if.app-id = 'com.microsoft.Outlook'
 run = 'move-node-to-workspace C'
 
-# Move Zed, VScode and Edge to Workspace W - Work
+# Move Zed, VScode, chrome, firefox and Edge to Workspace W - Work
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
@@ -234,12 +234,16 @@ run = 'move-node-to-workspace W'
 if.app-id = 'dev.zed.Zed'
 run = 'move-node-to-workspace W'
 
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = 'move-node-to-workspace W'
+
 # Move Terminal to E- tErminal - T can't be used as it is a shortcut
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
 run = 'move-node-to-workspace E'
 
-# Move firefox to P - Personal
+# Move firefox and reader to P-Personal workspace
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace P'
