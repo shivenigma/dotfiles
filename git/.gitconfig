@@ -1,6 +1,6 @@
 [user]
 	name = Vignesh M
-	email = ms.vignesh31@gmail.com
+	email = vignesh.m1@bayer.com
 	signingkey = /Users/vignesh.madhavan.ext/.ssh/id_ed25519
 [filter "lfs"]
 	clean = git-lfs clean -- %f
