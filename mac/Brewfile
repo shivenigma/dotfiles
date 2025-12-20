@@ -1,6 +1,7 @@
 tap "nikitabobko/tap"
 brew "antidote"
-brew "colima"
+brew "cloudflared"
+brew "colima", restart_service: :changed
 brew "docker"
 brew "docker-buildx"
 brew "docker-compose"
@@ -11,8 +12,9 @@ brew "imagemagick"
 brew "mailpit"
 brew "nodenv"
 brew "openjdk"
-brew "postgresql@14", restart_service: :changed
 brew "python@3.14"
+brew "pipx"
+brew "postgresql@14", restart_service: :changed
 brew "rbenv"
 brew "stow"
 cask "aerospace"
