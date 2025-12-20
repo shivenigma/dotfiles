@@ -5,3 +5,6 @@ eval "$(rbenv init - --no-rehash zsh)"
 
 # Added by `nodenv init` on Thu Oct 16 19:15:20 IST 2025
 eval "$(nodenv init - --no-rehash zsh)"
+
+# Created by `pipx` on 2025-11-21 15:02:32
+export PATH="$PATH:/Users/vignesh.madhavan.ext/.local/bin"

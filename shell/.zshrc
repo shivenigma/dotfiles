@@ -23,3 +23,6 @@ antidote load
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+
+# Created by `pipx` on 2025-11-21 15:02:32
+export PATH="$PATH:/Users/vignesh.madhavan.ext/.local/bin"
