@@ -220,6 +220,14 @@ run = 'move-node-to-workspace C'
 if.app-id = 'com.microsoft.Outlook'
 run = 'move-node-to-workspace C'
 
+[[on-window-detected]]
+if.app-id = 'com.apple.iCal'
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = 'move-node-to-workspace C'
+
 # Move Zed, VScode, chrome, firefox and Edge to Workspace W - Work
 
 [[on-window-detected]]
