@@ -1,3 +1,10 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+fpath=("/Users/vignesh.madhavan.ext/.zsh/completions" $fpath)
+autoload -Uz compinit
+compinit
+# OPENSPEC:END
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -26,3 +33,13 @@ antidote load
 
 # Created by `pipx` on 2025-11-21 15:02:32
 export PATH="$PATH:/Users/vignesh.madhavan.ext/.local/bin"
+
+# Docker/Colima configuration
+export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+
+# Added by GitButler installer
+eval "$(but completions zsh)"
+
+# Add a local file to add sonarqube token to env
+# Load local, machine-specific secrets (not in dotfiles repo)
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
