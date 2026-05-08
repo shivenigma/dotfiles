@@ -43,3 +43,9 @@ eval "$(but completions zsh)"
 # Add a local file to add sonarqube token to env
 # Load local, machine-specific secrets (not in dotfiles repo)
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+
+export SSL_CERT_FILE="/opt/homebrew/etc/openssl@3/cert.pem"
+export REQUESTS_CA_BUNDLE="/opt/homebrew/etc/openssl@3/cert.pem"
+export AWS_CA_BUNDLE="/opt/homebrew/etc/openssl@3/cert.pem"
+export NODE_EXTRA_CA_CERTS="$HOME/SSL-TLS-Configuration/bayer_all.pem"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
